@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
-import { RegisterComponent } from './register.component';
+import { Register } from './register';
 import { ClientName } from './client.name/client.name';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ClientContact } from './client.contact.data/client.contact';
+import { BrowserModule } from '@angular/platform-browser';
+import { BsDropdownModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
-    RegisterComponent,
-    ClientName
+    Register,
+    ClientName,
+    ClientContact
   ],
   imports: [
     FormsModule,
-    ReactiveFormsModule
+    BrowserModule,
+    ReactiveFormsModule,
+    BsDropdownModule.forRoot()
   ],
   providers: []
 })

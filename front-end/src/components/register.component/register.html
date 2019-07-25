@@ -6,7 +6,15 @@
   <ul class="list-group list-group-flush">
     <li class="list-group-item">
       <h5 class="text-left text-primary text-position">1. Client first name, last name and nickname</h5>
-      <client-name [register]="$any"></client-name>
+      <client-name></client-name>
+    </li>
+    <li class="list-group-item">
+      <h5 class="text-left text-primary text-position">2. Client phone number and email</h5>
+      <client-contact></client-contact>
     </li>
   </ul>
+
+  <div class="card-footer">
+    <button type="button" class="btn btn-primary" (click)="register()">Sign Up</button>
+  </div>
 </div>

@@ -1,5 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { RegisterComponent } from '../register.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'client-name',
@@ -13,10 +12,6 @@ export class ClientName implements OnInit{
   public lastName: string;
   public nickname: string;
 
-  @Input() register: RegisterComponent;
-
-  ngOnInit(): void {
-    console.log(this.firstName);
-  }
+  ngOnInit(): void {}
 
 }
