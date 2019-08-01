@@ -5,5 +5,7 @@
 }
 
 .card-body-position {
+  margin-top: 50px;
+  width: 75rem;
   text-align: center;
 }

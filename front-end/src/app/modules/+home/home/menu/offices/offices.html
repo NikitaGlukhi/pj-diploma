@@ -1,23 +1,25 @@
-<div class="card-body card-body-position">
-  <div class="btn-group btn-group-lg" dropdown>
-    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
-            aria-controls="dropdown-basic">
-      Selected country: <b>{{ cityName }}</b> <span class="caret"></span>
-    </button>
-    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu scrollable-menu"
-        role="menu" aria-labelledby="button-basic">
-      <li role="menuitem" *ngFor="let city of cities"><a class="dropdown-item" (click)="selectCity(city)">{{city}}</a></li>
-    </ul>
-  </div>
+<div class="card card-body-position mx-auto border-dark mb-3">
+  <div class="card-body">
+    <div class="btn-group btn-group-lg" dropdown>
+      <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+              aria-controls="dropdown-basic">
+        Selected country: <b>{{ cityName }}</b> <span class="caret"></span>
+      </button>
+      <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu scrollable-menu"
+          role="menu" aria-labelledby="button-basic">
+        <li role="menuitem" *ngFor="let city of cities"><a class="dropdown-item" (click)="selectCity(city)">{{city}}</a></li>
+      </ul>
+    </div>
 
-  <div class="btn-group btn-group-lg" dropdown>
-    <button id="button-basic-1" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
-            aria-controls="dropdown-basic">
-      Selected city: <b>{{ cityName }}</b> <span class="caret"></span>
-    </button>
-    <ul id="dropdown-basic-1" *dropdownMenu class="dropdown-menu scrollable-menu"
-        role="menu" aria-labelledby="button-basic">
-      <li role="menuitem" *ngFor="let city of cities"><a class="dropdown-item" (click)="selectCity(city)">{{city}}</a></li>
-    </ul>
+    <div class="btn-group btn-group-lg" dropdown>
+      <button id="button-basic-1" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+              aria-controls="dropdown-basic">
+        Selected city: <b>{{ cityName }}</b> <span class="caret"></span>
+      </button>
+      <ul id="dropdown-basic-1" *dropdownMenu class="dropdown-menu scrollable-menu"
+          role="menu" aria-labelledby="button-basic">
+        <li role="menuitem" *ngFor="let city of cities"><a class="dropdown-item" (click)="selectCity(city)">{{city}}</a></li>
+      </ul>
+    </div>
   </div>
 </div>
