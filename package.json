@@ -3,7 +3,7 @@
   "license": "MIT",
   "version": "0.0.1",
   "description": "Дипломная работа",
-  "author": "Nikita Glukhi <glukhi.nikita@gmail.com / mykyta.hlukhi@nure.ua>"
+  "author": "Nikita Glukhi <glukhi.nikita@gmail.com / mykyta.hlukhi@nure.ua>",
   "scripts": {
     "ng": "ng serve",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
