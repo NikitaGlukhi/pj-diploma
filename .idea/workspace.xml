@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5857a3cc-60f4-4546-b105-d1a712da14f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/app.routes.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/components/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home.routes.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home/home.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home/menu/offices/offices.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home/menu/offices/offices.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home/menu/offices/offices.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home/menu/tracking/tracking.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home/menu/tracking/tracking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+home/home/menu/tracking/tracking.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+login/login.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+login/login.routes.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+login/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+login/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+login/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+not-found/not-found.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+not-found/not-found.routes.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+not-found/not-found/not.found.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+not-found/not-found/not.found.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/app/modules/+not-found/not-found/not.found.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/assets/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/app/components/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/app/components/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/app/components/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/apps/server/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/middlewares/front-end.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/server/middlewares/front-end.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/server/nest-cli.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/server/src/app.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/server/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/server/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/server/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/server/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/server/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/server/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/app.routes.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/components/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/components/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/components/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/components/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home.routes.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home/home.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home/menu/offices/offices.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home/menu/offices/offices.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home/menu/offices/offices.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home/menu/tracking/tracking.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home/menu/tracking/tracking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+home/home/menu/tracking/tracking.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+not-found/not-found.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+not-found/not-found.routes.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+not-found/not-found/not.found.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+not-found/not-found/not.found.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/modules/+not-found/not-found/not.found.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/assets/Parcel-icon-128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/assets/Parcel-icon-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/assets/Parcel-icon-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/assets/Parcel-icon-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/assets/Parcel-icon-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/assets/Parcel-icon-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/assets/Parcel-icon-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/assets/Parcel-icon-72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/assets/Parcel-icon-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/dist/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="28" />
+    <option name="width" value="1392" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pj-diploma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pj-diploma" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/front-end/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/front-end/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5857a3cc-60f4-4546-b105-d1a712da14f4" name="Default Changelist" comment="" />
+      <created>1564746197017</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564746197017</updated>
+      <workItem from="1564746198192" duration="549000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="549000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="0" width="1922" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="DB Browser" />
+      <window_info id="Project Explorer" />
+      <window_info id="Job Explorer" />
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Console" />
+      <window_info anchor="bottom" id="DB Execution Console" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
