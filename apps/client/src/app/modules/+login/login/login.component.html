@@ -1,1 +1,4 @@
-<h1>Login</h1>
+<form [formGroup]="form" (ngSubmit)="login(model)">
+    <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
+    <button type="submit" class="btn btn-outline-primary" [disabled]="!form.valid">Sign In</button>
+</form>

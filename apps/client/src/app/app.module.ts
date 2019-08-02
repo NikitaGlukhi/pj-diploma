@@ -3,9 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './components/app/app.component';
 import { AppRoutesModule } from './app.routes.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
-import { FormlyModule } from '@ngx-formly/core';
-import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
 
 // NGX-BOOTSTRAP MODULES
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
