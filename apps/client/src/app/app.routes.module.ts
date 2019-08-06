@@ -8,6 +8,9 @@ export const appRoutes: Routes = [{
   path: '',
   loadChildren: './modules/+login/login.module#LoginModule'
 }, {
+  path: '',
+  loadChildren: './modules/+register/register.module#RegisterModule'
+}, {
   path: '**',
   loadChildren: './modules/+not-found/not-found.module#NotFoundModule'
 }];

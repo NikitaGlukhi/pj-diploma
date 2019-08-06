@@ -1,4 +1,12 @@
-<form [formGroup]="form" (ngSubmit)="login(model)">
-    <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
-    <button type="submit" class="btn btn-outline-primary" [disabled]="!form.valid">Sign In</button>
-</form>
+<div class="login-form">
+  <div class="form-title">
+     <h2 class="title-text">Login</h2>
+  </div>
+  <div class="input-fields">
+     <login-form #log></login-form>
+     <div>
+         <button type="button" class="btn btn-outline-primary" (click)="login(loginForm.model)" [disabled]="!log.form.valid">Sign In</button>
+         <small class="text-small">No account? <a routerLink (click)="navigateToRegister()">Register</a></small>
+     </div>
+  </div>
+</div>

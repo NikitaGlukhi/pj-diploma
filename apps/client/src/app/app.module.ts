@@ -8,10 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   declarations: [ AppComponent ],
   imports: [
+    CommonModule,
     BrowserAnimationsModule,
     AppRoutesModule,
     BsDropdownModule.forRoot(),

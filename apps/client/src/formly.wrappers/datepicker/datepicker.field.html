@@ -1,0 +1,13 @@
+<div class="form-group">
+  <input
+          type="text"
+          class="form-control"
+          placeholder="mm/dd/yyyy"
+          autocomplete="off"
+          bsDatepicker
+          [formControl]="formControl"
+          [formlyAttributes]="field"
+          [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD', containerClass: 'theme-orange' }"
+          [maxDate]="maxDate"
+          placement="top"/>
+</div>

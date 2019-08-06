@@ -27,6 +27,7 @@
     "@ngx-formly/bootstrap": "5.3.0",
     "@ngx-formly/core": "5.3.0",
     "bootstrap": "4.3.1",
+    "ng-bootstrap-form-validation": "4.0.0",
     "ngx-bootstrap": "5.1.0",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",

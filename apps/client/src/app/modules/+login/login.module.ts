@@ -1,27 +1,24 @@
 import { NgModule } from '@angular/core';
-import { LoginComponent } from './login/login.component';
 
+import { LoginForm } from './login/form/login.form';
+import { LoginComponent } from "./login/login.component";
 import { LoginRoutesModule } from './login.routes.module';
-import { ReactiveFormsModule } from "@angular/forms";
-import { FormlyFieldConfig, FormlyModule } from "@ngx-formly/core";
-import { FormlyBootstrapModule } from "@ngx-formly/bootstrap";
 
-export function FieldRequired(err, field) {
-  return `Field "${field.key}" is required`
-}
+import { ReactiveFormsModule } from "@angular/forms";
+import { WrappersModule } from "../../../formly.wrappers/wrappers.module";
+import { FormlyValidationModule } from "../formly.validation.module";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   imports: [
+    CommonModule,
     LoginRoutesModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot({
-      validationMessages: [
-        { name: 'required', message: FieldRequired }
-      ]
-    }),
-    FormlyBootstrapModule,
+    WrappersModule,
+    FormlyValidationModule,
   ],
-  declarations: [ LoginComponent ],
+  exports: [ LoginForm ],
+  declarations: [ LoginComponent, LoginForm ],
   providers: []
 })
 
