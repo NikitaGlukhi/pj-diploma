@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { WrappersModule } from "../../../formly.wrappers/wrappers.module";
 import { OfficesForm } from "./home/menu/offices/form/offices.form";
 import { TypeaheadModule } from "ngx-bootstrap";
+import { HeaderModule } from "../+header/header.module";
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TypeaheadModule } from "ngx-bootstrap";
   ],
   imports: [
     CommonModule,
+    HeaderModule,
     HomeRoutesModule,
     TabsModule,
     BsDropdownModule,

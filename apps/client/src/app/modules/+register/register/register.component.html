@@ -4,6 +4,9 @@
  </div>
  <div class="input-fields">
    <register-form #reg></register-form>
-   <button type="button" class="btn btn-outline-primary" (click)="register(registerForm.model)" [disabled]="!reg.form.valid">Register</button>
+   <div>
+     <button type="button" class="btn btn-outline-primary" (click)="register(registerForm.model)" [disabled]="!reg.form.valid">Register</button>
+     <small class="cancel-link"><a routerLink (click)="cancelRegistration('')">Cancel</a></small>
+   </div>
  </div>
 </div>

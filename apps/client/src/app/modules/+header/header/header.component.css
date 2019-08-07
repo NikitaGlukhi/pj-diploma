@@ -1,0 +1,21 @@
+.navbar-position {
+    cursor: pointer;
+    margin: 0 0 0 100px;
+}
+
+.nav-brand-icon {
+    float: left;
+}
+
+.nav-brand-text {
+    font-family: 'Amita';
+    margin: 11px 0 0 80px;
+}
+
+.link-position {
+    margin: 0 100px 0 0;
+}
+
+.center {
+    margin: auto;
+}

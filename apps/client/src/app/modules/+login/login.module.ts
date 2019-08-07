@@ -8,10 +8,12 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { WrappersModule } from "../../../formly.wrappers/wrappers.module";
 import { FormlyValidationModule } from "../formly.validation.module";
 import { CommonModule } from "@angular/common";
+import { HeaderModule } from "../+header/header.module";
 
 @NgModule({
   imports: [
     CommonModule,
+    HeaderModule,
     LoginRoutesModule,
     ReactiveFormsModule,
     WrappersModule,

@@ -1,12 +1,14 @@
+<header-component></header-component>
+
 <div>
-  <tabset [justified]="true">
+  <tabset>
     <tab heading="Tracking">
       <div class="track-form">
         <div class="form-title">
           <h2>Track your parcel</h2>
         </div>
         <div class="input-fields">
-          <menu-tracking #track></menu-tracking>
+          <menu-tracking></menu-tracking>
           <div>
             <button type="button" class="btn btn-outline-primary"
                     (click)="trackParcel(menuTracking.trackForm.model)"
