@@ -17,7 +17,6 @@ import { CommonModule } from "@angular/common";
     WrappersModule,
     FormlyValidationModule,
   ],
-  exports: [ LoginForm ],
   declarations: [ LoginComponent, LoginForm ],
   providers: []
 })

@@ -1,10 +1,34 @@
 <div>
   <tabset [justified]="true">
     <tab heading="Tracking">
-      <menu-tracking></menu-tracking>
+      <div class="track-form">
+        <div class="form-title">
+          <h2>Track your parcel</h2>
+        </div>
+        <div class="input-fields">
+          <menu-tracking #track></menu-tracking>
+          <div>
+            <button type="button" class="btn btn-outline-primary"
+                    (click)="trackParcel(menuTracking.trackForm.model)"
+                    [disabled]="!parcelTrackValid">Track parcel</button>
+          </div>
+        </div>
+      </div>
     </tab>
     <tab heading="Our offices">
-      <menu-offices></menu-offices>
+      <div class="track-form">
+        <div class="form-title">
+          <h2>Our offices</h2>
+        </div>
+        <div class="input-fields">
+          <menu-offices></menu-offices>
+          <div>
+            <button type="button" class="btn btn-outline-primary"
+                    (click)="getOfficeInfo(officeTracking.officeForm.model)"
+                    [disabled]="!officeTrackValid">Get office info</button>
+          </div>
+        </div>
+      </div>
     </tab>
   </tabset>
 </div>

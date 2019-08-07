@@ -1,4 +1,4 @@
-import { Component, ViewChild } from "@angular/core";
+import { AfterViewChecked, ChangeDetectorRef, Component, OnInit, ViewChild } from "@angular/core";
 import { LoginForm } from "./form/login.form";
 import { Router } from "@angular/router";
 
@@ -8,11 +8,11 @@ import { Router } from "@angular/router";
   styleUrls: ['./login.component.css']
 })
 
-export class LoginComponent {
+export class LoginComponent implements OnInit {
 
   @ViewChild(LoginForm, { static: false }) loginForm: LoginForm;
 
-  constructor(private router: Router) {}
+  constructor(private cdr: ChangeDetectorRef, private router: Router) {}
 
   public navigateToRegister() {
     this.router.navigateByUrl('register');
@@ -20,6 +20,10 @@ export class LoginComponent {
 
   public login(model: Object) {
     console.log(model);
+  }
+
+  ngOnInit(): void {
+    this.cdr.detectChanges();
   }
 
 }

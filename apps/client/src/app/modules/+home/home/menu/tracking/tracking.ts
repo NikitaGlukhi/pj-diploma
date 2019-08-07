@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from "@angular/core";
+import { TrackingForm } from "./form/tracking.form";
 
 @Component({
   selector: 'menu-tracking',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 
 export class MenuTracking {
 
-  public isCollapsed = false;
+  @ViewChild(TrackingForm, { static: false }) trackForm: ElementRef;
+  @ViewChild('formValid', { static: false }) formValidation: ElementRef;
 
 }

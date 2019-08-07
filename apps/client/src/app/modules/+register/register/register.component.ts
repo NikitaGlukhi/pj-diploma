@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { ChangeDetectorRef, Component, OnInit, ViewChild } from "@angular/core";
 import { RegisterForm } from "./form/register.form";
 
 @Component({
@@ -11,9 +11,11 @@ export class RegisterComponent implements OnInit {
 
   @ViewChild(RegisterForm, { static: false }) registerForm: RegisterForm;
 
-  constructor() {}
+  constructor(private cdr: ChangeDetectorRef) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cdr.detectChanges();
+  }
 
   public register(model) {
     console.log(model);

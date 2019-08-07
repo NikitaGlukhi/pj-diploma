@@ -1,4 +1,16 @@
-.menu-navigation {
+.track-form {
+  margin: 80px 0 0 30%;
+  width: 40%;
+  background-color: #fafaff;
+  border: 1px #d7d7d7 solid;
+  border-radius: 15px;
+}
+
+.form-title {
+  margin: 20px 0 20px 0;
   text-align: center;
-  margin-top: 50px;
+}
+
+.input-fields {
+  margin: 10px 60px 30px 60px;
 }

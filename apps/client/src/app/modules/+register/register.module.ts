@@ -15,7 +15,6 @@ import { FormlyValidationModule } from "../formly.validation.module";
     WrappersModule,
     FormlyValidationModule
   ],
-  exports: [ RegisterForm ],
   declarations: [ RegisterComponent, RegisterForm ],
   providers: []
 })

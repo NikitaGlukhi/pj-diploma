@@ -4,21 +4,27 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { FormlyBootstrapModule } from "@ngx-formly/bootstrap";
 import { NgBootstrapFormValidationModule } from "ng-bootstrap-form-validation";
 
+import { TypeaheadModule } from "ngx-bootstrap/typeahead";
+import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
+import { BsDropdownModule } from "ngx-bootstrap/dropdown";
+
 import { EmailField } from "./email/email.field";
 import { PasswordField } from "./password/password.field";
 import { TextField } from "./text/text.field";
 import { TypeheadField } from "./typehead/typehead.field";
-import { TypeaheadModule } from "ngx-bootstrap/typeahead";
-import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
 import { DatepickerField } from "./datepicker/datepicker.field";
+import { DropdownField } from "./dropdown/dropdown.field"
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   imports: [
+    CommonModule,
     FormsModule,
     ReactiveFormsModule,
     FormlyBootstrapModule,
     TypeaheadModule.forRoot(),
     BsDatepickerModule.forRoot(),
+    BsDropdownModule.forRoot(),
     FormlyModule.forRoot({
       types: [
         {
@@ -45,6 +51,11 @@ import { DatepickerField } from "./datepicker/datepicker.field";
           name: 'customDatepicker',
           component: DatepickerField,
           wrappers: ['form-field']
+        },
+        {
+          name: 'customDropdown',
+          component: DropdownField,
+          wrappers: ['form-field']
         }
       ]
     }),
@@ -55,6 +66,7 @@ import { DatepickerField } from "./datepicker/datepicker.field";
     PasswordField,
     TypeheadField,
     DatepickerField,
+    DropdownField,
     TextField
   ]
 })
