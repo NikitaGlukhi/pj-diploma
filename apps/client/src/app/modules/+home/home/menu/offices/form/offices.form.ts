@@ -55,10 +55,12 @@ export class OfficesForm {
       className: 'col-6',
       templateOptions: {
         label: 'Office address',
+        initialOption: 'Choose an office address',
         options: [
           { label: 1, value: 1 },
-          { label: 1, value: 1 }
+          { label: 2, value: 2 }
         ],
+        required: true
       },
       expressionProperties: {
         'templateOptions.disabled': '!model.city'

@@ -5,8 +5,8 @@
     </a>
 
     <div class="btn-group btn-group-lg center" role="group">
-        <button type="button" class="btn btn-dark text-white">Create new parcel</button>
-        <button type="button" class="btn btn-dark text-white">My profile</button>
+        <button type="button" class="btn btn-dark text-white" (click)="routerNavigate('create-new-parcel')">Create new parcel</button>
+        <button type="button" class="btn btn-dark text-white" (click)="routerNavigate('user-profile/' + userNickname)">My profile</button>
         <button type="button" class="btn btn-dark text-white">Parcels management</button>
     </div>
 

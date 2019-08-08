@@ -1,0 +1,13 @@
+<div>
+  <header-component></header-component>
+</div>
+
+<div class="parcel-form">
+  <div class="form-title">
+    <h2>Create new parcel</h2>
+  </div>
+  <div class="form-fields">
+    <new-parcel-form #newParcel></new-parcel-form>
+    <button type="button" class="btn btn-outline-primary" [disabled]="!newParcel.form.valid" (click)="createNewParcel(newParcel.model)">Create new parcel</button>
+  </div>
+</div>

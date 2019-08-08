@@ -11,6 +11,12 @@ export const appRoutes: Routes = [{
   path: '',
   loadChildren: './modules/+register/register.module#RegisterModule'
 }, {
+  path: '',
+  loadChildren: './modules/+new-parcel/new-parcel.module#NewParcelModule'
+}, {
+  path: '',
+  loadChildren: './modules/+user-profile/user-profile.module#UserProfileModule'
+}, {
   path: '**',
   loadChildren: './modules/+not-found/not-found.module#NotFoundModule'
 }];
