@@ -9,10 +9,12 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CommonModule } from "@angular/common";
+import { HeaderModule } from "./modules/+header/header.module";
 
 @NgModule({
   declarations: [ AppComponent ],
   imports: [
+    HeaderModule,
     CommonModule,
     BrowserAnimationsModule,
     AppRoutesModule,

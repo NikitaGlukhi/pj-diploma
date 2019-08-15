@@ -1,17 +1,35 @@
-<nav class="navbar navbar-dark bg-dark text-white">
-    <a class="navbar-brand navbar-position" routerLink (click)="routerNavigate('')">
-        <img src="../../../assets/Parcel-icon-72.png" class="d-inline-block align-top nav-brand-icon" alt="">
-        <h1 class="nav-brand-text">Post Office</h1>
+<nav class="navigation-menu">
+  <div class="menu-brand">
+    <a routerLink (click)="routerNavigate('')">
+      <div class="menu-brand_image">
+        <img src="../../../../assets/Parcel-icon-72.png" alt="">
+      </div>
+      <div class="menu-brand_text">
+        <p>Post Office</p>
+      </div>
     </a>
+  </div>
 
-    <div class="btn-group btn-group-lg center" role="group">
-        <button type="button" class="btn btn-dark text-white" (click)="routerNavigate('create-new-parcel')">Create new parcel</button>
-        <button type="button" class="btn btn-dark text-white" (click)="routerNavigate('user-profile/' + userNickname)">My profile</button>
-        <button type="button" class="btn btn-dark text-white">Parcels management</button>
-    </div>
+  <div class="navigation-links">
+      <div class="navigation-links_link" (click)="routerNavigate('create-new-parcel')">
+          Create parcel
+      </div>
+      <div class="navigation-links_link" (click)="routerNavigate('user-profile/Nikita_Glukhi')">
+          User profile
+      </div>
+      <div class="navigation-links_link">
+          Parcels management
+      </div>
+  </div>
 
-    <div class="btn-group my-2 link-position" role="group" aria-label="">
-        <button type="button" class="btn btn-primary" routerLink (click)="routerNavigate('login')">Sign In</button>
-        <button type="button" class="btn btn-primary" routerLink (click)="routerNavigate('register')">Sign Up</button>
-    </div>
+  <div class="authentication">
+      <div class="group-buttons">
+          <div class="group-button" (click)="routerNavigate('login')">
+              Sign In
+          </div>
+          <div class="group-button" (click)="routerNavigate('register')">
+              Sign Up
+          </div>
+      </div>
+  </div>
 </nav>
