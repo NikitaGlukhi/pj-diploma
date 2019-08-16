@@ -1,35 +1,31 @@
-<nav class="navigation-menu">
-  <div class="menu-brand">
-    <a routerLink (click)="routerNavigate('')">
-      <div class="menu-brand_image">
-        <img src="../../../../assets/Parcel-icon-72.png" alt="">
-      </div>
-      <div class="menu-brand_text">
-        <p>Post Office</p>
-      </div>
-    </a>
-  </div>
+<div class="navigation-menu">
+    <div class="navigation-menu_brand" (click)="routerNavigate('')">
+        <div class="brand-icon">
+            <img src="../../../../assets/Parcel-icon-72.png" alt="">
+        </div>
+        <div class="brand-text">
+            Post Office
+        </div>
+    </div>
 
-  <div class="navigation-links">
-      <div class="navigation-links_link" (click)="routerNavigate('create-new-parcel')">
-          Create parcel
-      </div>
-      <div class="navigation-links_link" (click)="routerNavigate('user-profile/Nikita_Glukhi')">
-          User profile
-      </div>
-      <div class="navigation-links_link">
-          Parcels management
-      </div>
-  </div>
+    <div class="navigation-menu_routes">
+        <div class="router-link" (click)="routerNavigate('create-new-parcel')">
+            Create parcel
+        </div>
+        <div class="router-link" (click)="routerNavigate('user-profile/Nikita_Glukhi')">
+            User profile
+        </div>
+        <div class="router-link" (click)="routerNavigate('')">
+            Parcels management
+        </div>
+    </div>
 
-  <div class="authentication">
-      <div class="group-buttons">
-          <div class="group-button" (click)="routerNavigate('login')">
-              Sign In
-          </div>
-          <div class="group-button" (click)="routerNavigate('register')">
-              Sign Up
-          </div>
-      </div>
-  </div>
-</nav>
+    <div class="authentication">
+        <div class="authentication_button" (click)="routerNavigate('login')">
+            Sign In
+        </div>
+        <div class="authentication_button" (click)="routerNavigate('register')">
+            Sign Up
+        </div>
+    </div>
+</div>

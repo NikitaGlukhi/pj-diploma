@@ -1,0 +1,121 @@
+@mixin transition($duration: 0) {
+  -webkit-transition-property: width, margin, background-color, -webkit-trasform, color;
+  -moz-transition-property: width, margin, background-color, -moz-transform, color;
+  -o-transition-property: width, margin, background-color, -o-transform, color;
+  transition-property: width, margin, background-color, transform, color;
+
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+.navigation-menu {
+  position: absolute;
+  width: 80px;
+  top: 0;
+  float: left;
+  height: 100%;
+  background-color: dimgray;
+  user-select: none;
+
+  &_brand {
+    cursor: pointer;
+    position: fixed;
+    margin: 30px 4px 0 4px;
+
+    @include transition(.3s);
+  }
+
+  &_routes {
+    text-align: center;
+    margin: 350px 0 0 -290px;
+
+    @include transition(.3s);
+  }
+
+  @include transition(.3s);
+  &:hover {
+    width: 300px;
+    .navigation-menu_brand {
+      margin: 60px 4px 0 4px;
+    }
+    .navigation-menu_routes {
+      transform: translate(300px, 0);
+    }
+    .router-link {
+      color: white;
+    }
+    .brand-text {
+      color: white;
+      transform: translate(0, 290px);
+    }
+    .authentication {
+      transform: translate(285px, 0);
+    }
+  }
+}
+
+.brand-icon {
+  float: left;
+}
+
+.brand-text {
+  color: rgba(105, 105, 105, 0);
+  float: right;
+  margin-top: -290px;
+  font-size: 290%;
+  font-family: Amita;
+
+  @include transition(.3s);
+}
+
+.router-link {
+  width: 280px;
+  font-size: 150%;
+  cursor: pointer;
+  font-family: Roboto Mono;
+  padding: 10px;
+  color: rgba(105, 105, 105, 0);
+  border-radius: 8px;
+  user-select: none;
+
+  @include transition(.3s);
+
+  &:hover {
+    background-color: #404040;
+  }
+}
+
+.authentication {
+  width: 35%;
+  margin-left: -190px;
+  margin-top: 400px;
+  text-align: center;
+
+  @include transition(.3s);
+
+  &_button {
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #315fed;
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    &:hover {
+      &:first-child {
+        background-color: #000dff;
+      }
+      &:last-child {
+        background-color: #000dff;
+      }
+    }
+    @include transition(.3s);
+  }
+}
