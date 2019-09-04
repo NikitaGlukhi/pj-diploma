@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { FormlyFieldConfig } from "@ngx-formly/core";
+import { HomeService } from "../../../../services/home.service";
 
 @Component({
   selector: 'offices-form',
@@ -9,6 +10,12 @@ import { FormlyFieldConfig } from "@ngx-formly/core";
 })
 
 export class OfficesForm {
+  private countries: any = [];
+
+  constructor(private service: HomeService) {
+    this.getCountries();
+  }
+
   public form = new FormGroup({});
   public model = {};
   public fields: FormlyFieldConfig[] = [
@@ -23,12 +30,12 @@ export class OfficesForm {
             label: 'Country',
             placeholder: 'Enter country name',
             limit: 6,
-            options: [
-              'Ukraine',
-              'Unites States',
-              'Great Britain',
-              'Russia'
-            ],
+            options: this.countries,
+            keypress: (field, $event) => {
+              if ($event.code === 'Enter') {
+                console.log(field);
+              }
+            },
             required: true
           },
         },
@@ -40,7 +47,7 @@ export class OfficesForm {
             label: 'City',
             placeholder: 'Enter city name',
             limit: 6,
-            options: this.getCitiesNames(),
+            options: [],
             required: true
           },
           expressionProperties: {
@@ -68,14 +75,14 @@ export class OfficesForm {
     }
   ];
 
-  private getCitiesNames() {
-    return [
-      'Kharkiv',
-      'Kiev',
-      'Lviv',
-      'Poltava',
-      'Vinnitsa',
-      'Odessa'
-    ];
+  private getCountries() {
+    this.service.getContryName()
+      .subscribe((result: Object[]) => {
+        for (let elem of result) {
+          this.countries.push(elem['name']);
+        }
+      })
   }
+
+  private getCitiesNames() {}
 }

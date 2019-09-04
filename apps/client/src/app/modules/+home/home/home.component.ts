@@ -27,12 +27,7 @@ export class HomeComponent implements AfterViewChecked, OnInit {
     console.log(model);
   }
 
-  ngOnInit(): void {
-    this.service.getContryName()
-      .subscribe(res => {
-        console.log(res);
-      })
-  }
+  ngOnInit(): void {}
 
   ngAfterViewChecked(): void {
     this.parcelTrackValid = this.menuTracking['formValidation'].form.valid;

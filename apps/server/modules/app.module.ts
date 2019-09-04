@@ -1,6 +1,8 @@
-import { MiddlewareConsumer, Module, NestModule, RequestMethod } from "@nestjs/common";
+import { Module } from "@nestjs/common";
 import { CountryModule } from "./country/country.module";
+
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { Connection } from "typeorm";
 import * as dbConfig from '../../../ormconfig';
 
 @Module({
@@ -11,4 +13,6 @@ import * as dbConfig from '../../../ormconfig';
   ],
   providers: [],
 })
-export class AppModule {  }
+export class AppModule {
+  constructor(private readonly connection: Connection) {  }
+}
