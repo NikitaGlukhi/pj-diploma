@@ -1,0 +1,16 @@
+<!--<div class="form-group">-->
+    <!--<div class="btn-group btn-group-lg" dropdown>-->
+        <!--<button id="dropdown-button" dropdownToggle type="button" class="btn btn-light dropdown-toggle" aria-controls="dropdown-template">-->
+            <!--{{ to.label }}: <b>{{ selectedOption?.name || 'No selected' }}</b>-->
+        <!--</button>-->
+        <!--<ul id="dropdown-template" *dropdownMenu class="dropdown-menu scrollable-menu" role="menu" aria-labelledby="dropdown-button">-->
+            <!--<li role="menuitem" *ngFor="let option of to.options"><a class="dropdown-item" (click)="selectOption(option)">{{ option.name }}</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="form-group">
+    <select class="form-control" [formControl]="formControl" [formlyAttributes]="field">
+        <option selected hidden>{{ to?.initialOption }}</option>
+        <option *ngFor="let option of to.options">{{ option.label }}</option>
+    </select>
+</div>

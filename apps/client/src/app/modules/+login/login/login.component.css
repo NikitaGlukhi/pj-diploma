@@ -1,0 +1,21 @@
+.login-form {
+    margin-top: 15%;
+    background-color: #fafaff;
+    margin-left: 33%;
+    width: 35%;
+    border-radius: 15px;
+    border: 1px solid #d7d7d7;
+}
+
+.input-fields {
+    margin:  30px 50px 30px 50px;
+}
+
+.form-title {
+    text-align: center;
+    margin:  30px 0 30px 0;
+}
+
+.text-small {
+    margin-left: 10px;
+}

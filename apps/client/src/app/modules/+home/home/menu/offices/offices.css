@@ -1,0 +1,11 @@
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
+.card-body-position {
+  margin-top: 50px;
+  width: 75rem;
+  text-align: center;
+}
