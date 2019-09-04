@@ -1,6 +1,7 @@
-import { AfterViewChecked, ChangeDetectorRef, Component, ElementRef, ViewChild } from "@angular/core";
+import { AfterViewChecked, ChangeDetectorRef, Component, ElementRef, ViewChild, OnInit } from "@angular/core";
 import { MenuTracking } from "./menu/tracking/tracking";
 import { MenuOffices } from "./menu/offices/offices";
+import { HomeService } from "../services/home.service";
 
 @Component({
   selector: 'home',
@@ -8,7 +9,7 @@ import { MenuOffices } from "./menu/offices/offices";
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent implements AfterViewChecked {
+export class HomeComponent implements AfterViewChecked, OnInit {
 
   @ViewChild(MenuTracking, { static: false }) menuTracking: ElementRef;
   @ViewChild(MenuOffices, { static: false }) officeTracking: ElementRef;
@@ -16,7 +17,7 @@ export class HomeComponent implements AfterViewChecked {
   public parcelTrackValid: boolean = false;
   public officeTrackValid: boolean = false;
 
-  constructor(private cdr: ChangeDetectorRef) {  }
+  constructor(private cdr: ChangeDetectorRef, private service: HomeService) {  }
 
   public trackParcel(model) {
     console.log(model);
@@ -24,6 +25,13 @@ export class HomeComponent implements AfterViewChecked {
 
   public getOfficeInfo(model) {
     console.log(model);
+  }
+
+  ngOnInit(): void {
+    this.service.getContryName()
+      .subscribe(res => {
+        console.log(res);
+      })
   }
 
   ngAfterViewChecked(): void {

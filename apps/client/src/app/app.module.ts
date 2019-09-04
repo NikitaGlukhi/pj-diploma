@@ -10,6 +10,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CommonModule } from "@angular/common";
 import { HeaderModule } from "./modules/+header/header.module";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [ AppComponent ],
@@ -18,6 +19,7 @@ import { HeaderModule } from "./modules/+header/header.module";
     CommonModule,
     BrowserAnimationsModule,
     AppRoutesModule,
+    HttpClientModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
     CollapseModule.forRoot(),

@@ -1,7 +1,7 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
 
 import * as path from 'path';
-const allowedExt = ['.js', '.ico', '.css'];
+const allowedExt = ['.js', '.ico', '.css', '.scss', '.png', '.svg'];
 
 const resolvePath = (file: string) => path.resolve(`./dist/front-end/${file}`);
 
@@ -18,5 +18,8 @@ export class FrontEndMiddleware implements NestMiddleware {
                 res.sendFile(resolvePath('index.html'));
             }
         };
+    }
+
+    use(req: TRequest, res: TResponse, next: () => void): any {
     }
 }

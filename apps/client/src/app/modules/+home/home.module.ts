@@ -13,6 +13,7 @@ import { WrappersModule } from "../../../formly.wrappers/wrappers.module";
 import { OfficesForm } from "./home/menu/offices/form/offices.form";
 import { TypeaheadModule } from "ngx-bootstrap";
 import { HeaderModule } from "../+header/header.module";
+import { HomeService } from "./services/home.service";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { HeaderModule } from "../+header/header.module";
     ReactiveFormsModule,
     WrappersModule
   ],
-  providers: []
+  providers: [
+    HomeService
+  ]
 })
 
 export class HomeModule {  }
