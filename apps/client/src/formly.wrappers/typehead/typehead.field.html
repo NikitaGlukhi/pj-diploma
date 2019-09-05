@@ -5,5 +5,7 @@
             [formControl]="formControl"
             [formlyAttributes]="field"
             [typeahead]="to.options"
+            (typeaheadOnSelect)="to.onSelect($event)"
+            [typeaheadOptionField]="to.optionField"
             [typeaheadOptionsLimit]="to.limit"/>
 </div>

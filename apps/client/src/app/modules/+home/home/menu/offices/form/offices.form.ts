@@ -11,6 +11,7 @@ import { HomeService } from "../../../../services/home.service";
 
 export class OfficesForm {
   private countries: any = [];
+  private cities: any = [];
 
   constructor(private service: HomeService) {
     this.getCountries();
@@ -31,10 +32,9 @@ export class OfficesForm {
             placeholder: 'Enter country name',
             limit: 6,
             options: this.countries,
-            keypress: (field, $event) => {
-              if ($event.code === 'Enter') {
-                console.log(field);
-              }
+            optionField: 'name',
+            onSelect: (event) => {
+              this.getCities1(event.item.id);
             },
             required: true
           },
@@ -47,7 +47,11 @@ export class OfficesForm {
             label: 'City',
             placeholder: 'Enter city name',
             limit: 6,
-            options: [],
+            options: this.cities,
+            optionField: 'cityName',
+            onSelect: (event) => {
+              console.log(event.item);
+            },
             required: true
           },
           expressionProperties: {
@@ -76,13 +80,22 @@ export class OfficesForm {
   ];
 
   private getCountries() {
-    this.service.getContryName()
-      .subscribe((result: Object[]) => {
-        for (let elem of result) {
-          this.countries.push(elem['name']);
+    this.service.getCountryName()
+      .subscribe((countries: Object[]) => {
+        for (let elem of countries) {
+          this.countries.push(elem);
         }
-      })
+      });
   }
 
-  private getCitiesNames() {}
+  private getCities1(iso: string) {
+    this.service.getCities1(iso);
+    this.service.getListOfCities
+      .subscribe((cities: Object[]) => {
+        this.cities.length = 0;
+        for (let city of cities) {
+          this.cities.push(city);
+        }
+      });
+  }
 }
