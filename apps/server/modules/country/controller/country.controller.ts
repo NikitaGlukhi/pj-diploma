@@ -17,5 +17,11 @@ export class CountryController {
     const result = await this.service.getCitiesNames(req.query.countryISO);
     res.json(result);
   }
+
+  @Get('offices')
+  async getOffices(@Req() req, @Res() res) {
+    const result = await this.service.getOffices();
+    res.json(result);
+  }
 }
 

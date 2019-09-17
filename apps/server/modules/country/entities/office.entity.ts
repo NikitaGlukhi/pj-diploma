@@ -17,11 +17,11 @@ export class OfficeEntity {
   @Column({ type: 'int', nullable: false })
   officeNumber: number;
 
-  @Column({ type: 'int', nullable: false })
-  maxParcelWeight: number;
+  @Column({ type: 'varchar', length: 255, nullable: false })
+  maxParcelWeight: string;
 
-  @Column({ type: 'simple-json', nullable: false })
-  coords: OfficeCoords;
+  @Column({ type: 'simple-json', nullable: true, default: null })
+  coords: OfficeCoords | null;
 
   @Column({ type: 'varchar', length: 255, nullable: false })
   director: string;

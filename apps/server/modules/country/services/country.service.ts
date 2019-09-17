@@ -13,4 +13,8 @@ export class CountryService {
   public async getCitiesNames(countryISO: string) {
     return await this.repositoryLayer.getCities(countryISO);
   }
+
+  public async getOffices() {
+    return await this.repositoryLayer.getOffices();
+  }
 }

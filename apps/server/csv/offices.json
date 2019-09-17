@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "address": "Gonti Street, 19",
+    "officeNumber": 13,
+    "coords": {
+      "lat": 49.25,
+      "lng": 28.48
+    },
+    "director": "Sergio Mathews",
+    "phoneNumber": "0800-500-608",
+    "cityId": 1,
+    "maxParcelWeight": "Not Limited"
+  },
+  {
+    "id": 2,
+    "address": "Pushkin Street, 10",
+    "officeNumber": 8,
+    "coords": {
+      "lat": 49.23,
+      "lng": 28.47
+    },
+    "director": "Jaqueline Glover",
+    "phoneNumber": "0800-500-607",
+    "cityId": 1,
+    "maxParcelWeight": "Not Limited"
+  },
+  {
+    "id": 3,
+    "address": "Princes of Koriatovich Street, 181a",
+    "officeNumber": 18,
+    "coords": {
+      "lat": 49.22,
+      "lng": 28.46
+    },
+    "director": "Kierra Haynes",
+    "phoneNumber": "0800-500-606",
+    "cityId": 1,
+    "maxParcelWeight": "30"
+  },
+  {
+    "id": 4,
+    "address": "Keletska Street, 89",
+    "officeNumber": 5,
+    "coords": {
+      "lat": 49.22,
+      "lng": 28.41
+    },
+    "director": "Natalee Lam",
+    "phoneNumber": "0800-500-605",
+    "cityId": 1,
+    "maxParcelWeight": "Not Limited"
+  },
+  {
+    "id": 5,
+    "address": "Marshal Malinowski Street, 2",
+    "officeNumber": 63,
+    "coords": {
+      "lat": 48.48,
+      "lng": 35.06
+    },
+    "director": "Cecelia Oneill",
+    "phoneNumber": "0800-500-604",
+    "cityId": 2,
+    "maxParcelWeight": "50"
+  },
+  {
+    "id": 6,
+    "address": "Slobozhansky Avenue, 6",
+    "officeNumber": 11,
+    "coords": {
+      "lat": 48.49,
+      "lng": 35.07
+    },
+    "director": "Gia Rodriguez",
+    "phoneNumber": "0800-500-603",
+    "cityId": 2,
+    "maxParcelWeight": "Not Limited"
+  },
+  {
+    "id": 7,
+    "address": "Vladimir Vernadsky street, 10",
+    "officeNumber": 32,
+    "coords": {
+      "lat": 48.46,
+      "lng": 35.06
+    },
+    "director": "Ana Knapp",
+    "phoneNumber": "0800-500-602",
+    "cityId": 2,
+    "maxParcelWeight": "Not Limited"
+  },
+  {
+    "id": 8,
+    "address": "Academic Yangel Street, 40",
+    "officeNumber": 2,
+    "coords": {
+      "lat": 48.42,
+      "lng": 35.00
+    },
+    "director": "Urijah Francis",
+    "phoneNumber": "0800-500-601",
+    "cityId": 2,
+    "maxParcelWeight": "Not Limited"
+  },
+  {
+    "id": 9,
+    "address": "Svobody street, 44",
+    "officeNumber": 1,
+    "coords": {
+      "lat": 48.07,
+      "lng": 37.38
+    },
+    "director": "",
+    "phoneNumber": "0800-500-600",
+    "cityId": 3,
+    "maxParcelWeight": "Not Limited"
+  }
+]

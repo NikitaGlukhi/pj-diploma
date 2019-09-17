@@ -3,13 +3,15 @@ import { Repository } from "typeorm";
 import { InjectRepository } from '@nestjs/typeorm';
 import { CountryEntity } from "../entities/country.entity";
 import { CityEntity } from "../entities/city.entity";
+import { OfficeEntity } from "../entities/office.entity";
 
 @Injectable()
 export class CountryRepositoryLayer {
 
   constructor (
     @InjectRepository(CountryEntity) private countryEntity: Repository<CountryEntity>,
-    @InjectRepository(CityEntity) private cityEntity: Repository<CityEntity>
+    @InjectRepository(CityEntity) private cityEntity: Repository<CityEntity>,
+    @InjectRepository(OfficeEntity) private officeEntity: Repository<OfficeEntity>
   ) {  }
 
   public async getNames() {
@@ -23,5 +25,9 @@ export class CountryRepositoryLayer {
         countryId: countryISO
       }
     })
+  }
+
+  public async getOffices() {
+    return await this.officeEntity.find();
   }
 }
