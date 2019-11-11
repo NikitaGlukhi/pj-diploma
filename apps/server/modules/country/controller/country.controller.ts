@@ -20,7 +20,7 @@ export class CountryController {
 
   @Get('offices')
   async getOffices(@Req() req, @Res() res) {
-    const result = await this.service.getOffices();
+    const result = await this.service.getOffices(req.query.city);
     res.json(result);
   }
 }

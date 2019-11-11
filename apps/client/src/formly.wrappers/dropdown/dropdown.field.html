@@ -9,8 +9,8 @@
     <!--</div>-->
 <!--</div>-->
 <div class="form-group">
-    <select class="form-control" [formControl]="formControl" [formlyAttributes]="field">
+    <select class="form-control" [formControl]="formControl" [formlyAttributes]="field" (change)="to.onChange(selected)">
         <option selected hidden>{{ to?.initialOption }}</option>
-        <option *ngFor="let option of to.options">{{ option.label }}</option>
+        <option #selected *ngFor="let option of to.options">{{ option.address }}, №{{ option.officeNumber }}</option>
     </select>
 </div>

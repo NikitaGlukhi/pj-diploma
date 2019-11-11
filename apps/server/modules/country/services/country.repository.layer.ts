@@ -27,7 +27,18 @@ export class CountryRepositoryLayer {
     })
   }
 
-  public async getOffices() {
-    return await this.officeEntity.find();
+  public async getOffices(cityName: string) {
+    const cityId = await this.cityEntity.findOne({
+      select: ['id'],
+      where: {
+        cityName: cityName
+      }
+    });
+
+    return await this.officeEntity.find({
+      where: {
+        cityId: cityId.id
+      }
+    });
   }
 }

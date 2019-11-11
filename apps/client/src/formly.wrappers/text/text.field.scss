@@ -1,0 +1,15 @@
+.fields-group {
+  position: relative;
+  display: flex;
+  margin-right: 20px;
+  width: 100%;
+}
+.text-field {
+  border: none;
+  border-bottom: 3px solid #315fed;
+  padding: 5px 10px;
+}
+
+.active {
+  border-top: 3px solid #315fed;
+}

@@ -14,7 +14,7 @@ export class CountryService {
     return await this.repositoryLayer.getCities(countryISO);
   }
 
-  public async getOffices() {
-    return await this.repositoryLayer.getOffices();
+  public async getOffices(cityName: string) {
+    return await this.repositoryLayer.getOffices(cityName);
   }
 }

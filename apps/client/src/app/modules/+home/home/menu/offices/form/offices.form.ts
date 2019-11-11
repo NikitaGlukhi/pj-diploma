@@ -12,13 +12,19 @@ import { HomeService } from "../../../../services/home.service";
 export class OfficesForm {
   private countries: any = [];
   private cities: any = [];
+  private offices: any = [];
+
 
   constructor(private service: HomeService) {
     this.getCountries();
   }
 
   public form = new FormGroup({});
-  public model = {};
+  public model = {
+    countryId: '',
+    cityId: '',
+    officeId: ''
+  };
   public fields: FormlyFieldConfig[] = [
     {
       fieldGroupClassName: 'row',
@@ -34,7 +40,8 @@ export class OfficesForm {
             options: this.countries,
             optionField: 'name',
             onSelect: (event) => {
-              this.getCities1(event.item.id);
+              this.model.countryId = event.item.id;
+              this.getCities(event.item.id);
             },
             required: true
           },
@@ -50,7 +57,7 @@ export class OfficesForm {
             options: this.cities,
             optionField: 'cityName',
             onSelect: (event) => {
-              console.log(event.item);
+              this.getOffices(event.item.cityName);
             },
             required: true
           },
@@ -67,10 +74,10 @@ export class OfficesForm {
       templateOptions: {
         label: 'Office address',
         initialOption: 'Choose an office address',
-        options: [
-          { label: 1, value: 1 },
-          { label: 2, value: 2 }
-        ],
+        options: this.offices,
+        onChange: (event) => {
+          console.log(1111, event);
+        },
         required: true
       },
       expressionProperties: {
@@ -88,8 +95,8 @@ export class OfficesForm {
       });
   }
 
-  private getCities1(iso: string) {
-    this.service.getCities1(iso);
+  private getCities(iso: string) {
+    this.service.getCities(iso);
     this.service.getListOfCities
       .subscribe((cities: Object[]) => {
         this.cities.length = 0;
@@ -97,5 +104,16 @@ export class OfficesForm {
           this.cities.push(city);
         }
       });
+  }
+
+  private getOffices(cityName: string) {
+    this.service.getOffices(cityName);
+    this.service.getListOfOffices
+      .subscribe((offices: Object[]) => {
+        this.offices.length = 0;
+        for (let office of offices) {
+          this.offices.push(office)
+        }
+      })
   }
 }
